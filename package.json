@@ -1,0 +1,19 @@
+{
+  "name": "mf-example",
+  "version": "1.0.0",
+  "description": "Пример проекта микрофронтендов с использованием @module-federation/nextjs-mf",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "yarn run build && yarn workspaces foreach -Apt run start",
+    "dev": "yarn workspaces foreach -Apt run dev",
+    "build": "yarn workspaces foreach -Apt run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@4.2.2"
+}

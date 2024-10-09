@@ -1,0 +1,5 @@
+{
+  "name": "@mf-example/utils",
+  "exports": "./index.js",
+  "packageManager": "yarn@4.2.2"
+}

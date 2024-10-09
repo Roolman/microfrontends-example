@@ -1,0 +1,79 @@
+.authForm {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.authFormButton {
+  width: 358px;
+  height: 50px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.authFormButton:hover {
+  opacity: .85;
+}
+
+.authFormForm {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: space-between;
+}
+
+.authFormInput {
+  width: 358px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.authFormLink {
+  color: #fff;
+}
+
+.authFormLink:hover {
+  opacity: .85;
+}
+
+.authFormText {
+  color: #fff;
+  font-family: Inter, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 15px;
+}
+
+.authFormTextfield {
+  font-family: Inter, sans-serif;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC;
+  font-size: 14px;
+  padding: 13px 0;
+  width: 100%;
+  color: #fff;
+}
+
+.authFormTextfield::-webkit-input-placeholder {color:#CCCCCC;}
+.authFormTextfield::-moz-placeholder          {color:#CCCCCC;}
+.authFormTextfield:-moz-placeholder           {color:#CCCCCC;}
+.authFormTextfield:-ms-input-placeholder      {color:#CCCCCC;}
+.authFormTextfield::placeholder               {color:#CCCCCC;}
+
+.authFormTitle {
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  font-family: Inter, sans-serif;
+  text-align: center;
+}

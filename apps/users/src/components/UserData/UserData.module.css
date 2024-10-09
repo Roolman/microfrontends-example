@@ -1,0 +1,237 @@
+.profile {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 36px 0;
+  }
+  
+@media screen and (max-width: 480px) {
+    .profile {
+        padding: 43px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.profileAddButton {
+  width: 150px;
+  height: 50px;
+  background: transparent url("./assets/add-icon.svg") center no-repeat;
+  background-size: 22px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.profileAddButton:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 740px) {
+  .profileAddButton {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileAddButton {
+    width: 100%;
+  }
+}
+
+.profileDescription {
+  font-size: 18px;
+  line-height: 22px;
+  grid-area: description;
+  margin: 0;
+}
+
+@media screen and (max-width: 568px) {
+  .profileDescription {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileDescription {
+    width: 100%;
+    margin: 7px 0 0 0;
+  }
+}
+
+.profileImage {
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 29px 0 0;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+}
+
+.profileImage::before,
+.profileImage::after {
+  content: '';
+  position: absolute;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.profileImage::before {
+  background: rgba(0, 0, 0, 0);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profileImage::after {
+  width: 26px;
+  height: 26px;
+  background-image: url('./assets/edit-icon.svg');
+  -webkit-background-size: contain;
+  background-size: contain;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.profileImage:hover::before {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.profileImage:hover::after {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 740px) {
+  .profileImage {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileImage {
+    margin-right: 0;
+  }
+}
+
+.profileEditButton {
+    width: 24px;
+    height: 24px;
+    background: transparent url('./assets/edit-icon.svg') center no-repeat;
+    background-size: 10px 10px;
+    border: 1px solid #fff;
+    grid-area: button;
+    align-self: center;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profileEditButton:hover {
+    opacity: 0.6;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .profileEditButton {
+      width: 18px;
+      height: 18px;
+      background-size: 8px 8px;
+    }
+  }
+  
+
+.profileInfo {
+  display: grid;
+  grid-template-areas: "title button"
+  "description description";
+  grid-template-columns: minmax(auto, 295px) auto;
+  grid-gap: 9px 17px;
+}
+
+@media screen and (max-width: 740px) {
+  .profileInfo {
+    grid-template-columns: minmax(auto, 228px) auto;
+    grid-gap: 9px 5px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .profileInfo {
+    grid-template-columns: minmax(auto, 195px) auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileInfo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 26px 0 33px 0;
+  }
+}
+
+.profileTitle {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: title;
+  margin: 0;
+}
+
+@media screen and (max-width: 740px) {
+  .profileTitle {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .profileTitle {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profileTitle {
+    min-width: 201px;
+  }
+}
