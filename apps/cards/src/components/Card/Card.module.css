@@ -1,0 +1,98 @@
+.card {
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardTitle {
+  max-width: 220px;
+  font-size: 24px;
+  line-height: 29px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+}
+
+.cardLikeCount {
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.cardLikeButton {
+  width: 21px;
+  height: 18px;
+  background: transparent url('./assets/like-inactive.svg') no-repeat;
+  background-size: 21px 18px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardLikeButton:hover {
+  opacity: 0.6;
+}
+
+.cardLikeButtonIsActive {
+  background: transparent url('./assets/like-active.svg') no-repeat;
+}
+
+.cardImage {
+  min-height: 282px;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.cardImage:hover {
+  cursor: pointer;
+}
+
+.cardDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 25px 20px;
+}
+
+.cardDeleteButton {
+  width: 18px;
+  height: 18px;
+  background: transparent url('./assets/delete-icon.svg') center no-repeat;
+  background-size: 18px 18px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cardDeleteButton:hover {
+  opacity: 0.6;
+}
+
+.cardDeleteButtonVisible {
+  display: block;
+}
+
+.cardDeleteButtonHidden {
+  display: none;
+}
